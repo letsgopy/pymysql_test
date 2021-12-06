@@ -7,7 +7,7 @@ connection = pymysql.connect(host="localhost",user="root",password="000000",db="
 # 创建光标对象，一个连接可以有很多光标，一个光标跟踪一种数据状态
 cur = connection.cursor()
 
-# 使用execute()方法执行SQL查询
+# 使用execute()方法执行SQL语句，验证是否连接成功
 print(cur.execute("select version()"))
 
 # 使用fetchone()方法获取单条数据
